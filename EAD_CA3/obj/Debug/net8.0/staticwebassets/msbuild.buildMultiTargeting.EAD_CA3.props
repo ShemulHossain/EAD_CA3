@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\EAD_CA3.props" />
-</Project>
