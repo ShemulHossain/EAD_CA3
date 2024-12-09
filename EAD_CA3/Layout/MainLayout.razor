@@ -1,4 +1,6 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
 @using EAD_CA3.Pages
 
 @if (isLoading)
@@ -13,8 +15,8 @@ else
         <div class="sidebar">
             <h2 class="logo">Library App</h2>
             <nav>
-                <a href="/">Home</a>
-                <a href="search-books">Search Books</a>
+                <a @onclick="NavigateHome">Home</a>
+                <a @onclick="NavigateSearchBooks">Search Books</a>
             </nav>
         </div>
 
@@ -120,4 +122,8 @@ else
 
         isLoading = false;
     }
+}
+@code {
+    private void NavigateHome() => NavigationManager.NavigateTo("/");
+    private void NavigateSearchBooks() => NavigationManager.NavigateTo("search-books");
 }
