@@ -1,0 +1,15 @@
+.image-container[b-57kt57gzvy] {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img[b-57kt57gzvy] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}

@@ -1,0 +1,58 @@
+﻿@page "/"
+
+<div class="home-page">
+    <h1>Welcome to Open Library Explorer</h1>
+    <p>Click below to start exploring a world of books:</p>
+    <a href="search-books" class="btn">Search Books</a>
+</div>
+
+<style>
+    /* Overall Page Styling */
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background: linear-gradient(135deg, #e9f5ff, #ffffff);
+        font-family: 'Arial', sans-serif;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    /* Button Styling */
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: #007bff;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    .btn:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+</style>

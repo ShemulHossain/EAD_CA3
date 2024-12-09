@@ -1,0 +1,194 @@
+﻿@using EAD_CA3.Services
+@using System.Web
+@page "/book-details/{bookKey}"
+@inject NavigationManager NavigationManager
+@inject OpenLibraryService OpenLibraryService
+
+<h3>Book Details</h3>
+
+<div class="book-details-container">
+    @if (isLoading)
+    {
+        <Spinner />
+    }
+    else if (bookDetails != null)
+    {
+        <div class="book-details-card">
+            <h2 class="book-title">@bookDetails.Title</h2>
+
+            @if (!string.IsNullOrEmpty(coverImageUrl))
+            {
+                <div class="book-cover-container">
+                    <ImageWithSpinner Source="@coverImageUrl" Alt="Book Cover" Width="300px" Height="auto" />
+                </div>
+            }
+
+            <p><strong>Description:</strong> @(bookDetails.Description ?? "No description available.")</p>
+            <p><strong>Subjects:</strong> @(bookDetails.Subjects != null ? string.Join(", ", bookDetails.Subjects) : "No subjects available.")</p>
+
+            @if (!string.IsNullOrEmpty(authors))
+            {
+                <p><strong>Authors:</strong> @authors</p>
+            }
+            else
+            {
+                <p>No authors available for this book.</p>
+            }
+
+            <button @onclick="NavigateBack" class="back-button">Back to Search</button>
+        </div>
+    }
+    else
+    {
+        <p>Book details not available.</p>
+    }
+</div>
+
+<style>
+    .book-details-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .book-details-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .book-title {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .book-cover-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+        .book-cover-container img {
+            border-radius: 5px;
+        }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .back-button {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+
+@code {
+    [Parameter]
+    public string? bookKey { get; set; }
+    [Parameter]
+    public string? authors { get; set; }
+
+
+    private EAD_CA3.Services.BookDetails? bookDetails; // Fully qualified type
+    private bool isLoading = true;
+    private string? coverImageUrl;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Console.WriteLine($"Book key before cleaning: {bookKey}");
+
+        // Remove /works/ prefix if present
+        bookKey = bookKey?.Replace("/works/", "");
+
+        Console.WriteLine($"Cleaned book key: {bookKey}");
+
+        if (!string.IsNullOrEmpty(bookKey))
+        {
+            isLoading = true;
+            try
+            {
+                // Fetch book details
+                bookDetails = await OpenLibraryService.GetBookDetailsAsync(bookKey);
+                authors = null;
+
+                if (bookDetails?.Covers != null && bookDetails.Covers.Any())
+                {
+                    var coverId = bookDetails.Covers.First();
+                    coverImageUrl = $"https://covers.openlibrary.org/b/id/{coverId}-L.jpg";
+                    Console.WriteLine($"Cover image URL: {coverImageUrl}");
+                }
+                else
+                {
+                    coverImageUrl = null; // No cover image available
+                    Console.WriteLine("No cover image available.");
+                }
+
+                if (bookDetails?.Authors != null && bookDetails.Authors.Any())
+                {
+                    Console.WriteLine($"Authors keys: {string.Join(", ", bookDetails.Authors.Select(a => a.Author?.Key))}");
+
+                    var tasks = bookDetails.Authors
+                        .Select(a => a.Author?.Key?.Replace("/authors/", ""))
+                        .Where(key => !string.IsNullOrEmpty(key))
+                        .Select(key => OpenLibraryService.GetAuthorDetailsAsync(key!));
+
+                    var results = await Task.WhenAll(tasks);
+                    authors = string.Join(", ", results.Select(author => author?.Name ?? "Unknown Author"));
+                    Console.WriteLine($"Resolved authors: {authors}");
+                }
+                else
+                {
+                    Console.WriteLine("No authors found in the book details.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching book details: {ex.Message}");
+            }
+            finally
+            {
+                isLoading = false;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid book key.");
+        }
+    }
+
+
+
+    private async Task<string> FetchAuthorName(string key)
+    {
+        var author = await OpenLibraryService.GetAuthorDetailsAsync(key);
+        return author?.Name ?? "Unknown Author";
+    }
+
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/search-books");
+    }
+}

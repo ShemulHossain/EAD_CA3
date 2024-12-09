@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\pages\\bookdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:pages\\bookdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\pages\\imagewithspinner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:pages\\imagewithspinner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\pages\\spinner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:pages\\spinner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\pages\\searchbooks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:pages\\searchbooks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\services\\jsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:services\\jsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\services\\openlibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:services\\openlibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|c:\\users\\shemu\\source\\repos\\ead_ca3\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CB09D857-0014-4E0C-A6EE-B0864CB12014}|EAD_CA3.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImageWithSpinner.razor",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\ImageWithSpinner.razor",
+              "RelativeDocumentMoniker": "Pages\\ImageWithSpinner.razor",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\ImageWithSpinner.razor",
+              "RelativeToolTip": "Pages\\ImageWithSpinner.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T19:20:05.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Spinner.razor",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\Spinner.razor",
+              "RelativeDocumentMoniker": "Pages\\Spinner.razor",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\Spinner.razor",
+              "RelativeToolTip": "Pages\\Spinner.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T19:09:06.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JsonConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Services\\JsonConverter.cs",
+              "RelativeDocumentMoniker": "Services\\JsonConverter.cs",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Services\\JsonConverter.cs",
+              "RelativeToolTip": "Services\\JsonConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T11:13:21.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookDetails.razor",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\BookDetails.razor",
+              "RelativeDocumentMoniker": "Pages\\BookDetails.razor",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\BookDetails.razor",
+              "RelativeToolTip": "Pages\\BookDetails.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:38:12.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-09T10:08:28.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\Home.razor",
+              "RelativeToolTip": "Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:08:01.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T10:07:11.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OpenLibraryService.cs",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Services\\OpenLibraryService.cs",
+              "RelativeDocumentMoniker": "Services\\OpenLibraryService.cs",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Services\\OpenLibraryService.cs",
+              "RelativeToolTip": "Services\\OpenLibraryService.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAA1wEcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T10:06:31.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SearchBooks.razor",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\SearchBooks.razor",
+              "RelativeDocumentMoniker": "Pages\\SearchBooks.razor",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Pages\\SearchBooks.razor",
+              "RelativeToolTip": "Pages\\SearchBooks.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAKAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:03:00.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Shemu\\source\\repos\\EAD_CA3\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Layout\\MainLayout.razor",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAqwF0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T10:00:27.002Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
