@@ -1,0 +1,28 @@
+﻿<div class="image-container">
+    @if (isLoading)
+    {
+        <Spinner />
+    }
+    <img src="@Source" alt="@Alt" @onload="HandleImageLoaded" @onerror="HandleImageError" style="@imageStyle" />
+</div>
+
+@code {
+    [Parameter] public string Source { get; set; } = string.Empty;
+    [Parameter] public string Alt { get; set; } = "Image";
+    [Parameter] public string Width { get; set; } = "auto";
+    [Parameter] public string Height { get; set; } = "auto";
+
+    private bool isLoading = true;
+    private string imageStyle => isLoading ? "display: none;" : $"width: {Width}; height: {Height};";
+
+    private void HandleImageLoaded()
+    {
+        isLoading = false;
+    }
+
+    private void HandleImageError()
+    {
+        isLoading = false;
+        Console.WriteLine($"Error loading image: {Source}");
+    }
+}
