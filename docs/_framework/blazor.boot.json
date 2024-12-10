@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "EAD_CA3",
   "resources": {
-    "hash": "sha256-gAz5tpWqb4Wnv2Cw1Se62hkbvsow9fQJ/78vVSC1vkY=",
+    "hash": "sha256-DSnilC2OHtm5T94Q/Oate03s+tfdSFTDWZui2pXheCQ=",
     "jsModuleNative": {
       "dotnet.native.8.0.10.98rll3wttb.js": "sha256-QVxMlY7ohmjgde/bZMA0dlWDAeuUP+tEfkiSdg4DFcE="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "EAD_CA3.wasm": "sha256-7vzXorg1L4pNQdIytR0wjQZRX9RcZYdVAAu3VltLgUA=",
+      "EAD_CA3.wasm": "sha256-g5FiWIBconWlhPllqwoiekQk3HfunIniaub7rhc6Gig=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-YRnUTK1hDfHEzsmoVTe7tOY1C+LDYFI6eZOAKzBylZM=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-AqvwlIRXzVEAJOPiHT7A668nOQHNxocPaqIPsbmHVlA=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-LdAy6nNgakNLR1G1UW0m1t/i4G5ASffvuPT/PUnY+Ho=",
